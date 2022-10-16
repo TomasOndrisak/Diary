@@ -1,7 +1,10 @@
 <template>
   <aside :class="`${is_expanded && 'is-expanded'}`">
-    <div class="logo">
-      <img src="../../assets/logo.png" alt="vue" />
+    <div class="menu">
+      <router-link class="button" to="/">
+        <span class="material-icons">login</span>
+        <span class="text">Login</span></router-link
+      >
     </div>
 
     <div class="menu-toggle-wrap">
@@ -12,7 +15,7 @@
 
     <h3>Menu</h3>
     <div class="menu">
-      <router-link class="button" to="/">
+      <router-link class="button" to="/home">
         <span class="material-icons">home</span>
         <span class="text">Home</span></router-link
       >

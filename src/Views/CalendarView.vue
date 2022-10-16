@@ -21,7 +21,7 @@ export default {
   },
 };
 </script>
-<style  scoped>
+<style lang="scss" scoped>
 .background {
   border-style: groove;
   border-color: var(--primary);
@@ -30,6 +30,10 @@ export default {
   max-height: 100% !important;
   overflow: auto;
   box-sizing: content-box;
+  @media (max-width: 1024px) {
+    //pre ipady
+    padding-left: 6rem;
+  }
 }
 .day {
   display: inline-flex;

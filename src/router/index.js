@@ -4,12 +4,13 @@ import About from '../Views/AboutView.vue'
 import Settings from '../Views/SettingsView.vue'
 import Calendar from '../Views/CalendarView.vue'
 import Diary from '../Views/DiaryView.vue'
+import Login from '../Views/LoginView.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/',
+            path: '/home',
             component: Home
         },
         {
@@ -33,6 +34,10 @@ const router = createRouter({
         {
             path: '/diary',
             component: Diary
+        },
+        {
+            path: '/',
+            component: Login
         }
 
     ]

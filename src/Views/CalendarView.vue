@@ -21,7 +21,7 @@ export default {
   },
 };
 </script>
-<style lang="">
+<style  scoped>
 .background {
   border-style: groove;
   border-color: var(--primary);

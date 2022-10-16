@@ -53,7 +53,7 @@ const ToggleMenu = () => {
 aside {
   display: flex;
   flex-direction: column;
-  width: calc(2rem + 2rem);
+  width: 4rem;
   overflow: hidden;
   min-height: 100vh;
   overflow: hidden;
@@ -79,7 +79,6 @@ aside {
   .menu-toggle-wrap {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 1rem;
     position: relative;
     top: 0;
     transition: 0.2s ease-out;

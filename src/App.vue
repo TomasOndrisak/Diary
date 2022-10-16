@@ -23,7 +23,7 @@ export default {
   --dark: #1e293b;
   --dark-alt: #334155;
   --light: #f1f5f9;
-  --sidebar-width: 300px;
+  --sidebar-width: 200px;
 }
 * {
   //resets vymaze margin padding boxing

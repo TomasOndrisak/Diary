@@ -1,12 +1,12 @@
 <template>
   <div class="input">
-    <h1>Title</h1>
+    <h1 style="color: white">Title</h1>
     <textarea
       class="title"
       v-model="title"
       placeholder=" Insert your title."
     ></textarea>
-    <h2>text</h2>
+    <h2 style="color: white">text</h2>
     <textarea
       class="text"
       v-model="message"
@@ -41,6 +41,7 @@ export default {
   padding-top: 1rem;
   padding-left: 10%;
   width: 90%;
+  background-color: var(--dark);
 
   textarea.title {
     width: 50% !important;
@@ -48,6 +49,7 @@ export default {
     padding-top: 5px;
     text-align: center;
     resize: none;
+    background: var(--light);
   }
   textarea.text {
     width: 80% !important;
@@ -55,6 +57,7 @@ export default {
     max-height: 40% !important;
     padding-top: 5px;
     resize: none;
+    background: var(--light);
   }
   .diary {
     padding-top: 1rem;
@@ -66,6 +69,7 @@ export default {
 .calendarDay {
   font-size: 30px;
   font-weight: bold;
+  color: white;
 
   padding-bottom: 1%;
 }

@@ -1,9 +1,9 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import Home from '../Views/Home.vue'
-import About from '../Views/About.vue'
-import Settings from '../Views/Settings.vue'
-import Calendar from '../Views/Calendar.vue'
-import Diary from '../Views/Diary.vue'
+import Home from '../Views/HomeView.vue'
+import About from '../Views/AboutView.vue'
+import Settings from '../Views/SettingsView.vue'
+import Calendar from '../Views/CalendarView.vue'
+import Diary from '../Views/DiaryView.vue'
 
 const router = createRouter({
     history: createWebHistory(),

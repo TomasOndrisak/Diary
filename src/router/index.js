@@ -24,6 +24,12 @@ const router = createRouter({
             path: '/calendar',
             component: Calendar
         },
+        {  
+            path: '/diary/:id',
+            name: 'diary',
+            component: Diary,
+
+        },
         {
             path: '/diary',
             component: Diary

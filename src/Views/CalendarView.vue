@@ -1,16 +1,21 @@
 <template lang="">
   <div class="background">
     <h3 style="font-size: 63px; color: white;">Month</h3>
-    <div class="day" v-for="i in 31" :key="i">
+    <router-link  :to="{
+         name: 'diary',
+         params: { id: i},
+        }"
+         class="day" v-for="i in 31" :key="i">
       <h1 style="color: white;">{{i}}</h1>
 
-    </div>
-  </div>
+</router-link>
+</div>
 </template>
 <script>
 export default {
   data() {
     return {
+      date: Date.now(),
       i: 0,
     };
   },

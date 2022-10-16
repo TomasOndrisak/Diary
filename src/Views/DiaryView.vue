@@ -14,6 +14,9 @@
     ></textarea>
 
     <div class="diary">
+      <div class="calendarDay" v-if="$route.params.id">
+        Day {{ $route.params.id }}
+      </div>
       <Diary v-show="title || message" :message="message" :title="title" />
     </div>
   </div>
@@ -22,6 +25,7 @@
 import Diary from "../components/Diary/Diary.vue";
 export default {
   components: { Diary },
+
   data() {
     return {
       title: "",
@@ -37,6 +41,7 @@ export default {
   padding-top: 1rem;
   padding-left: 10%;
   width: 90%;
+
   textarea.title {
     width: 50% !important;
     height: 2rem !important;
@@ -54,8 +59,14 @@ export default {
   .diary {
     padding-top: 1rem;
     width: 90%;
-    height: 50%;
+    height: 45%;
     padding-left: 10%;
   }
+}
+.calendarDay {
+  font-size: 30px;
+  font-weight: bold;
+
+  padding-bottom: 1%;
 }
 </style>

@@ -1,12 +1,5 @@
 <template>
   <aside :class="`${is_expanded && 'is-expanded'}`">
-    <div class="menu">
-      <router-link class="button" to="/">
-        <span class="material-icons">login</span>
-        <span class="text">Login</span></router-link
-      >
-    </div>
-
     <div class="menu-toggle-wrap">
       <button class="menu-toggle" @click="ToggleMenu">
         <span class="material-icons">double_arrow</span>
@@ -15,6 +8,10 @@
 
     <h3>Menu</h3>
     <div class="menu">
+      <router-link class="button" to="/">
+        <span class="material-icons">login</span>
+        <span class="text">Login</span></router-link
+      >
       <router-link class="button" to="/home">
         <span class="material-icons">home</span>
         <span class="text">Home</span></router-link
@@ -83,7 +80,7 @@ aside {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: 0;
+    top: 5px;
     transition: 0.2s ease-out;
     .menu-toggle {
       transition: 0.2s ease-out;
@@ -147,7 +144,6 @@ aside {
   &.is-expanded {
     width: var(--sidebar-width);
     .menu-toggle-wrap {
-      top: -3rem;
       .menu-toggle {
         transform: rotate(-180deg);
       }

@@ -6,7 +6,7 @@
       <p>password</p>
       <input type="password" />
     </div>
-    <button class="material-icons">login</button>
+    <button class="material-icons">arrow_right_alt</button>
     <div>
       <button class="register-button">Register</button>
     </div>
@@ -39,8 +39,12 @@ export default {};
     box-sizing: content-box;
   }
   button.material-icons {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--light);
+
+    &:hover {
+      color: var(--primary);
+    }
   }
 }
 </style>

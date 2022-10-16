@@ -10,7 +10,7 @@
     <textarea
       class="text"
       v-model="message"
-      placeholder="Star writting your diary."
+      placeholder="Start writting your diary."
     ></textarea>
 
     <div class="diary">

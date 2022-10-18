@@ -137,11 +137,11 @@ export default {
     border-radius: 8px;
     font-weight: bold;
     background-color: #c83028;
-    width: 5% !important;
-    height: 5% !important;
     padding-top: 5px;
     box-sizing: content-box;
     margin: 6%;
+    padding: 20px;
+    font-size: 20px;
   }
   button.login-button {
     border-style: groove;
@@ -149,9 +149,8 @@ export default {
     border-radius: 8px;
     font-weight: bold;
     background-color: var(--primary);
-    width: 5% !important;
-    height: 5% !important;
-    padding-top: 5px;
+    font-size: 20px;
+    padding: 20px;
     box-sizing: content-box;
   }
   .dismiss {

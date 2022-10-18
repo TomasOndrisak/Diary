@@ -40,8 +40,8 @@ export default {
   border-style: groove;
   border-color: var(--primary);
   background-color: var(--dark);
-  width: 15% !important;
-  height: 15% !important;
+  width: 10% !important;
+  height: 10% !important;
   margin: 4px;
   &:hover {
     background-color: var(--primary);

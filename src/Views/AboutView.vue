@@ -4,7 +4,7 @@
   </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 img {
   box-shadow: 10px 10px 5px #ccc;
 }

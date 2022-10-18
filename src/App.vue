@@ -24,7 +24,7 @@ export default {
   font-family: "Fira sans", sans-serif;
 }
 body {
-  background: var(--light); //znizi svetlost pozadia
+  background: var(--dark); //znizi svetlost pozadia
 }
 button {
   //buttony nemaju styling

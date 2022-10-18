@@ -42,6 +42,10 @@ export default {
   background-color: var(--dark);
   width: 15% !important;
   height: 15% !important;
-  margin: 5px;
+  margin: 4px;
+  &:hover {
+    background-color: var(--primary);
+    transition: 0.4s ease-out;
+  }
 }
 </style>

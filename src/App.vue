@@ -16,15 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
-:root {
-  //variables
-  --primary: #4ade80;
-  --grey: #64748b;
-  --dark: #1e293b;
-  --dark-alt: #334155;
-  --light: #f1f5f9;
-  --sidebar-width: 200px;
-}
 * {
   //resets vymaze margin padding boxing
   margin: 0;

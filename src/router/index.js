@@ -5,7 +5,6 @@ import Settings from '../Views/SettingsView.vue'
 import Calendar from '../Views/CalendarView.vue'
 import Diary from '../Views/DiaryView.vue'
 import Login from '../Views/LoginView.vue'
-import Register from '../Views/RegisterView.vue'
 import {auth} from '../firebase'
 
 const router = createRouter({
@@ -15,31 +14,29 @@ const router = createRouter({
             path: '/home',
             component: Home,
             meta: {
-                requiresAuth: true
-              }
+                requiresAuth: true,
+              },
         },
         {
             path: '/about',
             component: About,
             meta: {
-                requiresAuth: true
-              }
+                requiresAuth: true,
+              },
       
         },
         {
             path: '/settings',
             component: Settings,
-            meta: {
-                requiresAuth: true
-              }
+           
    
         },
         {
             path: '/calendar',
             component: Calendar,
             meta: {
-                requiresAuth: true
-            }
+                requiresAuth: true,
+            },
          
         },
         {  
@@ -47,20 +44,24 @@ const router = createRouter({
             name: 'diary',
             component: Diary,
             meta: {
-                requiresAuth: true
-            }
+                requiresAuth: true,
+            },
 
         },
         {
             path: '/diary',
             component: Diary,
             meta: {
-                requiresAuth: true
-            }
+                requiresAuth: true,
+            },
         },
         {
             path: '/',
-            component: Login
+            component: Login,
+            meta: {
+                requiresAuth: false,
+            },
+            
         },
 
        

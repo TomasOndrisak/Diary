@@ -11,8 +11,19 @@
         <span class="text">Login</span></router-link
       >
     </div>
-    <h3>Menu</h3>
     <div class="menu">
+      <button
+        class="button"
+        v-if="$store.state.user"
+        @click="$store.dispatch('logout')"
+      >
+        <span class="material-icons">logout</span>
+        <span class="text">logout</span>
+      </button>
+    </div>
+
+    <div class="menu" v-if="$store.state.user">
+      <h3>Menu</h3>
       <router-link class="button" to="/home">
         <span class="material-icons">home</span>
         <span class="text">Home</span></router-link
@@ -33,19 +44,11 @@
     <!--  -->
     <!--Bottom panel-->
     <div class="flex"></div>
-    <div class="menu">
+    <div class="menu" v-if="$store.state.user">
       <router-link class="button" to="/settings">
         <span class="material-icons">settings</span>
         <span class="text">Settings</span>
       </router-link>
-      <button
-        class="button"
-        v-if="$store.state.user"
-        @click="$store.dispatch('logout')"
-      >
-        <span class="material-icons">logout</span>
-        <span class="text">logout</span>
-      </button>
     </div>
   </aside>
 </template>
@@ -70,6 +73,7 @@ export default {
       store.dispatch("fetchUser");
     });
   },
+  methods: {},
 };
 </script>
 
@@ -154,7 +158,7 @@ aside {
       }
       &:hover,
       &.router-link-exact-active {
-        background-color: var(--dark-alt);
+        background-color: var(--darkAlt);
         .material-icons,
         .text {
           color: var(--primary);
